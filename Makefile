@@ -1,4 +1,4 @@
-files := main.o Transmitter/transmitter.o Nodes/general_node.o
+files := main.o
 GXX := g++
 CC := g++ # because otherwise the linker is for c rather than c++
 
