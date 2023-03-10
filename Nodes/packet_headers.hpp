@@ -11,8 +11,8 @@
  * https://en.wikipedia.org/wiki/IEEE_802.1Q
 */
 struct generic_packet_header_t {
-    char dst_mac[6];
-    char src_mac[6];
+    uint8_t dst_mac[6];
+    uint8_t src_mac[6];
     uint16_t ethertype;
 };
 
@@ -27,8 +27,8 @@ struct vlan_field_t {
  * https://en.wikipedia.org/wiki/IEEE_802.1Q
 */
 struct vlan_packet_header_t {
-    char dst_mac[6];
-    char src_mac[6];
+    uint8_t dst_mac[6];
+    uint8_t src_mac[6];
     uint16_t TPID;
     vlan_field_t vlan_field;
     uint16_t size;
